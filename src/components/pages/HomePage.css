@@ -1,8 +1,17 @@
-.HomePage {
+.div-enter {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgb(180, 180, 248), rgb(255, 220, 250));
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+}
+
+.text-HomePage {
+    margin: 200px;
+}
+
+.text-HomePage p {
+    color: #7180AC;
+    font-weight: bold;
+    font-size: 1.5rem;
 }

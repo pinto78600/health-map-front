@@ -1,6 +1,7 @@
 import React from 'react'
 import globe from './globe.svg'
 import styled from 'styled-components'
+import './Globe.css'
 
 function Globe() {
 
@@ -52,9 +53,10 @@ svg {
     <div>
       <GlobeStyle>
         <img
-          alt='globe'
           src={globe}
+          alt='globe'
         />
+        <h1 className='title-logo'>Docto Map</h1>
       </GlobeStyle>
     </div>
   );
