@@ -62,7 +62,7 @@ render() {
 
   if (this.state.redirect===true) {
     return (
-    <Redirect to={{pathname: "/VaccinationCountry"}} />
+    <Redirect to={{pathname: `/VaccinationCountry/`}} />
     )
   }
 

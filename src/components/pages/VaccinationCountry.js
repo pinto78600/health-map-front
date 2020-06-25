@@ -1,17 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink } from "react-router-dom"
-import './VaccinationCountry.css'
+import axios from 'axios'
 import VaccinationCountryBox from './VaccinationCountryBox'
+import './VaccinationCountry.css'
 
-function VaccinationCountry() {
-    return(
-        <div>
-            <div className='background-VaccinationCountry'>
-                <VaccinationCountryBox />
-            </div>
-            <NavLink to="/Map" ><i class="fas fa-arrow-circle-left"></i></NavLink>
-        </div>
-    )
+const VaccinationCountry = () => {
+  const [mapList, setmapList] = useState([])
+  const fetchMapList = async () => {
+    const result = await axios.get('http://localhost:8080/vaccine')
+    setmapList(result.data)
+    console.log(result.data);
+
+  }
+  useEffect(() => {
+    fetchMapList()
+  }, [])
+
+
+  return (
+    <div>
+      <div className='background-VaccinationCountry'>
+        {mapList.map(map => {
+          console.log('map:' + map.name)
+          return <VaccinationCountryBox name={map.name} />
+        })}
+      </div>
+      <NavLink to="/Map" ><i class="fas fa-arrow-circle-left"></i></NavLink>
+    </div>
+  )
 }
 
 export default VaccinationCountry
