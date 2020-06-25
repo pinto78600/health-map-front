@@ -12,14 +12,14 @@ function Map() {
   const MapStyle = styled.div`
     margin: auto;
     color: black;
-    padding: 3em;
-    width: 80%;
+    padding-top: 4em;
+    width: 70%;
 
   svg {
     
     // All layers are just path elements
     path {
-      fill: #1c8ea1;
+      fill: #fff;
       cursor: pointer;
       outline: none;
 
