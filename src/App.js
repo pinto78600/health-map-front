@@ -5,7 +5,8 @@ import VaccinationCountry from './components/pages/VaccinationCountry'
 import HomePage from'./components/pages/HomePage'
 import './App.css'
 
-
+import Photos from './components/Photos'
+import Globe from './components/Globe'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route path="/VaccinationCountry" component={VaccinationCountry} />
         </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

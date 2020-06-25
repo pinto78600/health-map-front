@@ -21,7 +21,7 @@ render() {
     
     // All layers are just path elements
     path {
-      fill: #1c8ea1;
+      fill: #fff;
       cursor: pointer;
       outline: none;
 
