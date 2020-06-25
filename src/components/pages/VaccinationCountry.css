@@ -1,0 +1,8 @@
+.background-VaccinationCountry {
+    background: linear-gradient(rgb(180, 180, 248), rgb(255, 220, 250));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

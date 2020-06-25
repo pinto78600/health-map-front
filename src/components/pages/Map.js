@@ -4,9 +4,6 @@ import styled from 'styled-components'
 import world from '../../world.json'
 import './Map.css'
 
- // const style = { cursor: 'pointer' };
-
-
 function Map() {
 
   const MapStyle = styled.div`
