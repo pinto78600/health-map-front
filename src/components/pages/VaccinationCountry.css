@@ -1,0 +1,18 @@
+.background-VaccinationCountry {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-arrow-circle-left {
+    font-size: 3rem;
+    position: relative;
+    right: 570px;
+    bottom: 90px;
+}
+
+.fa-arrow-circle-left:hover {
+    color: #ef4c4c;
+}
