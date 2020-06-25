@@ -1,13 +1,18 @@
 import React from 'react';
-// import Map from './components/pages/Map'
-import './App.css'
+import { Switch, Route } from "react-router-dom"
+import Map from './components/pages/Map'
 import VaccinationCountry from './components/pages/VaccinationCountry'
+import './App.css'
+
 
 function App() {
 
   return (
     <div className="App">
-      <VaccinationCountry />
+        <Switch>
+          <Route exact path="/" component={Map} />
+          <Route path="/VaccinationCountry" component={VaccinationCountry} />
+        </Switch>
     </div>
   );
 }

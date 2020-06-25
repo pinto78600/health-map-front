@@ -1,11 +1,16 @@
-import React from 'react';
-import { VectorMap } from '@south-paw/react-vector-maps';
+import React from 'react'
+import  { Redirect } from 'react-router-dom'
+import { VectorMap } from '@south-paw/react-vector-maps'
 import styled from 'styled-components'
 import world from '../../world.json'
 import './Map.css'
 
-function Map() {
+class Map extends React.Component {
+  state = {
+    redirect: false
+  }
 
+render() {
   const MapStyle = styled.div`
     margin: auto;
     color: black;
@@ -48,9 +53,17 @@ function Map() {
   }
 `
 
-  const onClick = ({ target }) => {
-    const name = target.attributes.name.value;
-      window.open(`https://www.pasteur.fr/fr/centre-medical/preparer-son-voyage/${name}`)
+  const onClick = () => {
+    // const name = target.attributes.name.value;
+    //   window.open(`https://www.pasteur.fr/fr/centre-medical/preparer-son-voyage/${name}`)
+    // <Redirect to={{pathname: "/VaccinationCountry"}}></Redirect>
+    this.setState({redirect: true})
+  }
+
+  if (this.state.redirect===true) {
+    return (
+    <Redirect to={{pathname: "/VaccinationCountry"}} />
+    )
   }
 
   return (
@@ -60,6 +73,7 @@ function Map() {
       </MapStyle>
     </div>
   );
+  }
 }
 
 export default Map
