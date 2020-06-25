@@ -9,11 +9,9 @@ function Globe() {
   margin: auto;
   color: black;
   padding-top: 4em;
-  width: 70%;
+  width: 30%;
 
 svg {
-
-  :hover: #fff;
   
   // All layers are just path elements
   path {
@@ -55,8 +53,9 @@ svg {
         <img
           src={globe}
           alt='globe'
+          className='logo-globe'
         />
-        <h1 className='title-logo'>Docto Map</h1>
+        <h1 className='title-logo'>Docto MAP</h1>
       </GlobeStyle>
     </div>
   );

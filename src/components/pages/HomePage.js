@@ -10,9 +10,10 @@ const HomePage = () => {
             <Globe />
             <div className="div-enter">
                 <div className='text-HomePage'>
-                    <p>Travel Serene, Travel Vaccinated</p>
+                    <p>Travel Serene,</p> 
+                    <p>Travel Vaccinated</p>
                 </div>
-                <div>
+                <div className="div-Enter">
                     <Enter />
                 </div>
             </div>
