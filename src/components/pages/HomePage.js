@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Enter from "../Enter"
+import Enter from './Enter'
 import './HomePage.css'
 
 const HomePage = () => {
     return(
-        <div className="homePage">
+        <div className="HomePage">
             <Enter />
         </div>
     )

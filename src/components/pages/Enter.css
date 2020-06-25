@@ -1,0 +1,21 @@
+.button-Enter {
+    width:250px;
+    padding: 2px;
+    text-align:center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    color: #7180AC;
+    margin-bottom: 150px;
+    background-color: #F6EAFF; 
+    border: 1px solid #BDFBFE;
+    box-shadow: 2px 2px 1px grey;
+    cursor: pointer;
+    outline: 0;
+}
+
+.button-Enter:hover {
+    background-color: #BDFBFE;
+}
