@@ -21,7 +21,7 @@ const VaccinationCountry = () => {
     <div>
       <div className='background-VaccinationCountry'>
         {mapList.map(map => {
-          console.log('map:' + map.name)
+          console.log('map:' + map.name + '' + "" + map.disease + map.value + '' )
           return <VaccinationCountryBox name={map.name} />
         })}
       </div>
