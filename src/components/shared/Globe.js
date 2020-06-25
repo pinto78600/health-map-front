@@ -1,6 +1,7 @@
 import React from 'react'
 import globe from './globe.svg'
 import styled from 'styled-components'
+import './Globe.css'
 
 function Globe() {
 
@@ -8,11 +9,9 @@ function Globe() {
   margin: auto;
   color: black;
   padding-top: 4em;
-  width: 70%;
+  width: 30%;
 
 svg {
-
-  :hover: #fff;
   
   // All layers are just path elements
   path {
@@ -52,9 +51,11 @@ svg {
     <div>
       <GlobeStyle>
         <img
-          alt='globe'
           src={globe}
+          alt='globe'
+          className='logo-globe'
         />
+        <h1 className='title-logo'>Docto MAP</h1>
       </GlobeStyle>
     </div>
   );

@@ -1,0 +1,12 @@
+.logo-globe {
+    width: 50%;
+}
+
+.logo-globe:hover {
+    color: rgba(158,255,221);
+}
+
+.title-logo {
+    font-size: 2.2rem;
+    margin: 20px;
+}
