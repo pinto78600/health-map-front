@@ -4,7 +4,7 @@ import axios from 'axios'
 function Photos() {
 
   const [photo, setPhoto] = useState('')
-  const [clientId, setClientId] = ('sSiN4TxWyMDbZq2P4TASV0BkQZ1uNJGqnNAAOA8PVAU')
+  const [clientId] = useState('sSiN4TxWyMDbZq2P4TASV0BkQZ1uNJGqnNAAOA8PVAU')
   const [result, setResult] = useState([])
 
   function handleChange(e) {
@@ -12,17 +12,19 @@ function Photos() {
   }
 
   function handleSubmit(e) {
-    console.log(photo)
+    fetchData()
   }
 
   const url = `https://api.unsplash.com/search/photos?page=1&per_page=1&query${photo}&client_id=${clientId}`
 
-  axios
-    .get(url)
-    .then((response) => {
-      console.log(response)
-      setResult(response.data.results)
-    })
+  const fetchData = () => {
+    axios
+      .get(url)
+      .then((response) => {
+        console.log(response)
+        setResult(response.data.results)
+      })
+  }
 
   return (
     <div>
@@ -39,7 +41,8 @@ function Photos() {
       </button>
 
       {result.map((photo) => (
-        <img 
+        <img
+          alt='country'
           src={photo.urls.small}
         />
       ))}
