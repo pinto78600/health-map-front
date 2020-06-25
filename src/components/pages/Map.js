@@ -13,9 +13,9 @@ class Map extends React.Component {
 render() {
   const MapStyle = styled.div`
     margin: auto;
-    color: black;
     padding: 3em;
-    width: 80%;
+    max-width: 80vw;
+    height: 100%;
 
   svg {
     
