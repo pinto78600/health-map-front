@@ -2,7 +2,7 @@ import React from 'react';
 import Map from './components/pages/Map'
 import './App.css'
 
-import Photos from './components/pages/Photos'
+import Photos from './components/Photos'
 
 function App() {
 
