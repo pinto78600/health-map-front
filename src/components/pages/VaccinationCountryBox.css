@@ -6,9 +6,12 @@
 }
 .background-VaccinationCountryBox h1 {
     color: #7180AC;
+    margin-top: 0;
+    background-color: #FFCFDE;
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
+    padding: 5px;
 }
 .countryList{
     display: flex;
