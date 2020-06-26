@@ -1,12 +1,12 @@
 .background-VaccinationCountryBox{
     background-color: white;
-    height: 80vh;
     width: 50vw;
+    height: 600px;
     border-radius: 20px;
 }
 .background-VaccinationCountryBox h1 {
     color: #7180AC;
-    margin-top: 0;
+    margin-top: 10px;
     background-color: #FFCFDE;
     font-weight: bold;
     font-size: 2.5rem;
@@ -33,7 +33,6 @@
 
 .background-VaccinationCountryBox img {
     width: 100%;
-    
 }
 
 .div-map {

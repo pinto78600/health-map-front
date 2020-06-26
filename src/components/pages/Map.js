@@ -16,9 +16,9 @@ class Map extends React.Component {
     const MapStyle = styled.div`
     
     margin: auto;
-    padding: 3em;
-    max-width: 80vw;
-    height: 100%;
+    min-height: 100vh;
+    width: 70%;
+   
 
   svg {
     
@@ -69,7 +69,7 @@ class Map extends React.Component {
 
 
     return (
-      <div className="App">
+      <div>
         <MapStyle className='MapStyle-Page' >
           <VectorMap className='VectorMap-Page' {...world} layerProps={{ onClick }}  />
         </MapStyle>

@@ -6,8 +6,6 @@ import HomePage from'./components/pages/HomePage'
 import Calendar from './components/pages/Calendar'
 import './App.css'
 
-// import Photos from './components/Photos'
-// import Globe from './components/Globe'
 
 function App() {
   return (
