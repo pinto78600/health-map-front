@@ -1,11 +1,19 @@
 import React from 'react'
 import './VaccinationCountryBox.css'
 
-function VaccinationCountryBox() {
-    return(
+const VaccinationCountryBox  = props => {
+   return(
         <div className='background-VaccinationCountryBox'>
-           <h1>Name</h1>
-        </div>
+           <h1>{props.map}</h1>
+           {props.mapCountry.map(country => { 
+            return(
+           <div className='countryList'> 
+             <p>{country.disease}</p>
+              <p>{country.value}</p>
+            </div>
+           )
+           })}
+         </div>
     )
 }
 

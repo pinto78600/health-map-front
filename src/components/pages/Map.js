@@ -1,5 +1,5 @@
 import React from 'react'
-import  { Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 import { VectorMap } from '@south-paw/react-vector-maps'
 import styled from 'styled-components'
 import world from '../../world.json'
@@ -7,11 +7,14 @@ import './Map.css'
 
 class Map extends React.Component {
   state = {
-    redirect: false
+    redirect: false,
+    country: ''
   }
+  
+  render() {
 
-render() {
-  const MapStyle = styled.div`
+    const MapStyle = styled.div`
+    
     margin: auto;
     padding: 3em;
     max-width: 80vw;
@@ -51,28 +54,27 @@ render() {
       }
     }
   }
-`
+`   
+   
+    const onClick = ({target}) => {
+      this.setState({ country: target.attributes.name.value},()=> this.setState({redirect: true}))
+     
+    }
 
-  const onClick = () => {
-    // const name = target.attributes.name.value;
-    //   window.open(`https://www.pasteur.fr/fr/centre-medical/preparer-son-voyage/${name}`)
-    // <Redirect to={{pathname: "/VaccinationCountry"}}></Redirect>
-    this.setState({redirect: true})
-  }
+    if (this.state.redirect === true) {
+      return (
+        <Redirect to={{ pathname: `/VaccinationCountry/`, map:this.state.country }} />
+      )
+    }
 
-  if (this.state.redirect===true) {
+
     return (
-    <Redirect to={{pathname: "/VaccinationCountry"}} />
-    )
-  }
-
-  return (
-    <div className="App">
-      <MapStyle className='MapStyle-Page' >
-        <VectorMap className='VectorMap-Page' {...world} layerProps={{ onClick }} />
-      </MapStyle>
-    </div>
-  );
+      <div className="App">
+        <MapStyle className='MapStyle-Page' >
+          <VectorMap className='VectorMap-Page' {...world} layerProps={{ onClick }}  />
+        </MapStyle>
+      </div>
+    );
   }
 }
 
