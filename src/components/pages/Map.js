@@ -14,6 +14,7 @@ class Map extends React.Component {
   render() {
 
     const MapStyle = styled.div`
+    
     margin: auto;
     padding: 3em;
     max-width: 80vw;
@@ -65,7 +66,7 @@ class Map extends React.Component {
         <Redirect to={{ pathname: `/VaccinationCountry/`, map:this.state.country }} />
       )
     }
-    console.log('construction site', this.state.country);
+
 
     return (
       <div className="App">

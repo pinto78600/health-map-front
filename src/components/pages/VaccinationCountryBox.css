@@ -6,4 +6,10 @@
 }
 .background-VaccinationCountryBox h1 {
     color: black;
+    text-align: center;
+}
+.countryList{
+    display: flex;
+    justify-content: space-evenly;
+    
 }

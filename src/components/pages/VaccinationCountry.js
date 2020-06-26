@@ -7,22 +7,25 @@ import './VaccinationCountry.css'
 const VaccinationCountry = (props) => {
   const [mapList, setmapList] = useState([])
   const fetchMapList = async () => {
-    const result = await axios.get('http://localhost:8080/vaccine')
+    const result = await axios.get(`http://localhost:8080/vaccine`)
     setmapList(result.data)
   }
   useEffect(() => {
     fetchMapList()
   }, [])
 
-  console.log(props.location.map);
+  
+  
+  const countrySelected = props.location.map
+  
+  const mapCountry = mapList.filter(list => list.name  === countrySelected)
+  console.log(mapCountry);
   
   return (
     <div>
       <div className='background-VaccinationCountry'>
-        {mapList.map(map => {
-         // console.log('map:' + map.name + '' + "" + map.disease + map.value + '' )
-          return <VaccinationCountryBox name={map.name} map={props.location.map} />
-        })}
+          
+      <VaccinationCountryBox mapCountry={mapCountry}  map={props.location.map} />
       </div>
       <NavLink to="/Map" ><i class="fas fa-arrow-circle-left"></i></NavLink>
     </div>
