@@ -8,9 +8,9 @@ const VaccinationCountryBox  = props => {
            {props.mapCountry.map(country => { 
             return(
            <div className='countryList'> 
-             <p>{country.disease}</p>
-              <p>{country.value}</p>
-            </div>
+            <p className="p-country-disease">{country.disease}</p>
+            <p className="">{country.value}</p>
+          </div>
            )
            })}
          </div>
