@@ -24,9 +24,18 @@
 }
 
 .div-show-calendar {
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .show-calendar {
     text-decoration: none;
+}
+
+.background-VaccinationCountryBox img {
+    width: 100%;
+    
+}
+
+.div-map {
+    margin-bottom: 0;
 }

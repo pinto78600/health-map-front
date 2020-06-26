@@ -1,11 +1,12 @@
 import React from 'react'
-import { NavLink } from "react-router-dom"
+import { NavLink } from 'react-router-dom'
 import './VaccinationCountryBox.css'
 
 const VaccinationCountryBox = props => {
   return (
     <div className='background-VaccinationCountryBox'>
-      <h1>{props.map}</h1>
+      <h1 className="div-map">{props.map}</h1>
+      <img src={require(`../picture/${props.map}.jpg`)} alt={props.map}/>
       {props.mapCountry.map(country => {
         return (
           <div className='countryList'>

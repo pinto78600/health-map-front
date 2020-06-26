@@ -1,3 +1,40 @@
-.vaccine-box {
 
+
+.disease, .dosage, .little {
+    text-align: left;
+}
+
+.vaccine-box {
+    margin: 150px;
+    margin-top: 0;
+}
+
+.age {
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.h1-vaccination-schedule {
+    margin: 0;
+    padding: 50px;
+    color: #7180AC;
+    font-size: 3rem;
+}
+
+.disease {
+    padding-top: 25px;
+}
+
+.h4-footer {
+    margin-top: 100px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 720px) {
+    .vaccine-box {
+        margin: 20px;
+    }
 }
