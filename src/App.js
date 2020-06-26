@@ -3,8 +3,6 @@ import { Switch, Route } from "react-router-dom"
 import Map from './components/pages/Map'
 import VaccinationCountry from './components/pages/VaccinationCountry'
 import HomePage from'./components/pages/HomePage'
-import Register from './components/pages/Register'
-
 import './App.css'
 
 // import Photos from './components/Photos'
@@ -17,7 +15,6 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route path="/Map" component={Map} />
           <Route path="/VaccinationCountry" component={VaccinationCountry} />
-          <Route path="/Register" component={Register} />
         </Switch>
     </div>
   )
