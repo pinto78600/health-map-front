@@ -4,3 +4,12 @@
     width: 50vw;
     border-radius: 20px;
 }
+.background-VaccinationCountryBox h1 {
+    color: black;
+    text-align: center;
+}
+.countryList{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
