@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { NavLink } from "react-router-dom"
 import axios from 'axios'
 import VaccinationCountryBox from './VaccinationCountryBox'
+import Calendar from './Calendar'
 import './VaccinationCountry.css'
 
 const VaccinationCountry = (props) => {
@@ -28,6 +29,7 @@ const VaccinationCountry = (props) => {
       <VaccinationCountryBox mapCountry={mapCountry}  map={props.location.map} />
       </div>
       <NavLink to="/Map" ><i class="fas fa-arrow-circle-left"></i></NavLink>
+      <Calendar />
     </div>
   )
 }
