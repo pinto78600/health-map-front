@@ -3,10 +3,12 @@ import { Switch, Route } from "react-router-dom"
 import Map from './components/pages/Map'
 import VaccinationCountry from './components/pages/VaccinationCountry'
 import HomePage from'./components/pages/HomePage'
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 import './App.css'
 
-// import Photos from './components/Photos'
-// import Globe from './components/Globe'
 
 function App() {
   return (
