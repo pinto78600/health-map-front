@@ -1,15 +1,29 @@
 .background-VaccinationCountryBox{
     background-color: white;
-    height: 70vh;
+    height: 80vh;
     width: 50vw;
     border-radius: 20px;
 }
 .background-VaccinationCountryBox h1 {
-    color: black;
+    color: #7180AC;
+    font-weight: bold;
+    font-size: 2.5rem;
     text-align: center;
 }
 .countryList{
     display: flex;
     justify-content: space-evenly;
-    
+    color: #7180AC;
+}
+
+.fa-syringe{
+    font-size: 2rem;
+}
+
+.div-show-calendar {
+    margin-top: 70px;
+}
+
+.show-calendar {
+    text-decoration: none;
 }
